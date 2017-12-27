@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="jquery.js"></script>
-    <script src="data_generator.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/data_generator.js"></script>
+    <script src="scripts/twittler.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Bhaijaan|Dosis|Fredoka+One|Old+Standard+TT|Pattaya" rel="stylesheet">
+    <title>Twittler</title>
   </head>
   <body>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    <header>
+      <span class = "title">
+        <h1>Twittler<img src="styles/images/logo.png" alt= 'logo1'></h1>
+      </span>
+    </header>
+    <nav id = "mainNav">
+      <ul>
+        <li class = "homeNav"><img src="styles/images/home.png">home</li>
+        <li class = "exploreNav"><img src="styles/images/explore.png">explore</li>
+        <li class = "searchNav">search</li>
+      </ul>  
+    </nav>
+    <div id = "feed">
+      <span class = "feedHeader"><h2>FEED</h2></span>
+    </div>
+    <aside>
+      <h3>Trending</h3>
+        <div>
+          <ul>
+            <li>user1</li>
+            <li>user2</li>
+            <li>user3</li>
+            <li>user4</li>
+          </ul>
+        </div>
+    </aside> 
   </body>
 </html>
