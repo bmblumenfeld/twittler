@@ -9,31 +9,60 @@
     <title>Twittler</title>
   </head>
   <body>
-    <header>
-      <span class = "title">
-        <h1>Twittler<img src="styles/images/logo.png" alt= 'logo1'></h1>
-      </span>
+    <header class = title-banner>
+      <h1 class = "heading-title">Twittler<img src="styles/images/logo.png" id="header-logo"></h1>
+      <nav class = "nav-main">
+          <li class = "nav-home"><img src="styles/images/home.png" id="nav-main-img">home</li>
+          <li class = "nav-explore"><img src="styles/images/explore1.png" id="nav-main-img">explore</li>
+          <li class = "nav-search"><form class="search-form"><input type="text" name="search-input" placeholder="Search" id="nav-input"></form></li>
+          <li class= "nav-notifications"><img src="styles/images/notifications.png" id="nav-main-img">notifications</li>
+          <li class= "nav-messages"><img src="styles/images/messages.png" id="nav-main-img">messages</li>
+      </nav>
     </header>
-    <nav id = "mainNav">
-      <ul>
-        <li class = "homeNav"><img src="styles/images/home.png">home</li>
-        <li class = "exploreNav"><img src="styles/images/explore.png">explore</li>
-        <li class = "searchNav">search</li>
-      </ul>  
-    </nav>
-    <div id = "feed">
-      <span class = "feedHeader"><h2>FEED</h2></span>
-    </div>
-    <aside>
-      <h3>Trending</h3>
-        <div>
-          <ul>
-            <li>user1</li>
-            <li>user2</li>
-            <li>user3</li>
-            <li>user4</li>
-          </ul>
+    <div class = "content-container">
+      <div class = "feed-container">
+         <div class = "feed-header">
+           <form class = "tweet-input">
+             <input type="text" name="Add Tweet" placeholder="What's Happening?" id="tweet-input"> 
+             <button class = "add-tweet-button" type="button">Tweet</button> 
+           </form> 
+         </div>
+        <div class = "feed">
         </div>
-    </aside> 
+      </div>
+      <div class = "trending-container">
+        <div class = profile-info>
+          <img src="styles/images/profile.png" id="profile-pic">
+        </div>
+        <header class= "trending-header">
+          <h3>Trending</h3>
+        </header>
+        <div class = "trending-body">
+          <li class = "trending-shawndrost">shawndrost</li>
+          <li class = "trending-sharksforcheap">sharksforcheap</li>
+          <li class = "trending-mracus">mracus</li>
+          <li class="trending-douglascalhoun">douglascalhoun</li>
+        </div>
+      </div>
+      <div class = "suggestions-container" >
+        <header class = "who-header">
+          <h3>Who To Follow</h3> 
+        </header>  
+        <div class = suggestion-body>
+          <li>Benjamin Button</li>
+          <li>Wilber Van-Douglesmith</li>
+          <li>Nelson Bidrith</li>
+          <li>Hack Reactor</li>  
+        </div>  
+      </div>
+    </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
