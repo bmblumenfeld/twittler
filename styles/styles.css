@@ -1,32 +1,177 @@
 
 
 body {
-  background-color:  #ffffff	
+  background-color:  #ffffff
 }
-.title {
+.content-container{
+ display:flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+
+}
+.title-banner{
+  display:flex;	
+  flex-direction: column;
+  justify-content: center;
+  justify-content: baseline;
+}
+.heading-title {
+ margin:0;
  font-family: 'Baloo Bhaijaan', cursive;
  font-size: 60px;
  color: #1DA1F2;
  text-align: center;
 }
-h1{
-border: 1px solid #000000;
-padding: 0;
-margin: 0; 	
+#header-logo{
+  height: 20px;
+  width: 20px;	
 }
-
-.title,img {
+.nav-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;	
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 14px;
+  color: #66757f;
+  width: 74.375rem;
+  margin: 0 auto;
+}
+#nav-main-img{
   height: 20px;
   width: 20px;
+  border-radius: 1px;	
+}
+#nav-input {
+
+   -webkit-appearance: textfield;
+   background-color: #f5f8fa;
+   -webkit-rtl-ordering: logical;
+   cursor: auto;
+   padding: 1px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #1DA1F2;
+   border-image: initial;
+   border-radius: 10px;
+   font-family: 'Dosis', sans-serif;
+   font size:14px;
 }
 
-.flipped{
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+button {
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 7px 2px;	
+  border-color: #1DA1F2;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: #1DA1F2;
+  background-color: buttonface;
+  box-sizing: border-box; 
+}
+
+.trending-container{
+  display:flex;
+  flex-direction: column;
+  order:0;
+  list-style-type: none;  	
+}
+#profile-pic {
+  height: 225px;
+  width: 275px;
+  border-radius: 1px;
+}
+
+.feed-container{
+  float:right;
+  display: flex	
+  flex-direction:column;
+  order:1;
+}
+.suggestions-container{
+  display:flex;
+  flex-direction: column;
+  order:2;
+  list-style-type: none;  	  	
+}
+.tweet-header{
+  display: flex;
+  align-items: baseline; 
+  justify-content: flex-start;	
+}
+.tweet-handle{
+  
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  justify-content: center;
+  padding: 3px;
+}
+.tweet-date{
+  font-family: 'Dosis', sans-serif;
+  font-size: 8px;
+  justify-content: center;
+  padding: 3px; 
+}
+
+.tweet-message{
+  font-family: 'Old Standard TT', serif;  	
+  font-size: 18px;
+}
+.user-feed-container{
+  float:right;
+  display: flex	
+  flex-direction:column;
+}
+.user-tweet-header{
+  display: flex;
+  align-items: baseline; 
+  justify-content: flex-start;	
+}
+.user-tweet-handle{
+  
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  justify-content: center;
+  padding: 3px;
+}
+.user-tweet-date{
+  font-family: 'Dosis', sans-serif;
+  font-size: 8px;
+  justify-content: center;
+  padding: 3px; 
+}
+
+.user-tweet-message{
+  font-family: 'Old Standard TT', serif;  	
+  font-size: 18px;
+}
+#tweet-input{
+
+   -webkit-appearance: textfield;
+   background-color: #f5f8fa;
+   -webkit-rtl-ordering: logical;
+   cursor: auto;
+   padding: 1px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #1DA1F2;
+   border-image: initial;
+   border-radius: 10px;
+   font-family: 'Dosis', sans-serif;
+   font size:14px;
+
+}
+
+.toggle{
+  text-decoration: underline;
+  color: #1DA1F2;
+}
+.button-toggle{
+  background: #1DA1F2;
+  color: #ffffff;
 }
 
 font-family: 'Anton', sans-serif;
