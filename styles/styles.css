@@ -1,12 +1,16 @@
 
 
 body {
-  background-color:  #ffffff
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:  #e6ecf0;
 }
 .content-container{
  display:flex;
  flex-direction: row;
  justify-content: space-evenly;
+ flex-basis: auto;
 
 }
 .title-banner{
@@ -14,6 +18,13 @@ body {
   flex-direction: column;
   justify-content: center;
   justify-content: baseline;
+  background: #ffffff;
+  border-bottom: 1px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+
 }
 .heading-title {
  margin:0;
@@ -37,6 +48,7 @@ body {
   color: #66757f;
   width: 74.375rem;
   margin: 0 auto;
+  background: #ffffff;
 }
 #nav-main-img{
   height: 20px;
@@ -77,12 +89,42 @@ button {
   display:flex;
   flex-direction: column;
   order:0;
-  list-style-type: none;  	
+  list-style-type: none;
+
+}
+.trending-header{
+  font-family: 'Old Standard TT', serif;
+}
+.trending-body{
+  background: #ffffff;	
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  padding:10px;	
+}
+.hashtag{
+  color: #1DA1F2;
+  font-size: 16px;
+  padding: 0;
+  margin:0;
+
+}
+.trend-number{
+  color:#66757f;
+  font-size: 10px;
+  padding:0;
+  margin: 0;
+
 }
 #profile-pic {
   height: 225px;
   width: 275px;
   border-radius: 1px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
 }
 
 .feed-container{
@@ -90,12 +132,34 @@ button {
   display: flex	
   flex-direction:column;
   order:1;
-}
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  padding: 30px;
+ }
 .suggestions-container{
   display:flex;
   flex-direction: column;
   order:2;
-  list-style-type: none;  	  	
+  list-style-type: none;  	
+}
+ .who-header{
+   font-family: 'Old Standard TT', serif;	
+ }
+.suggestion-body{
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000; 
+  padding: 30px;
+  padding:30px; 	
+}
+.who-item{
+ 
+  padding-bottom: 20px;
 }
 .tweet-header{
   display: flex;
@@ -128,10 +192,9 @@ button {
 .user-tweet-header{
   display: flex;
   align-items: baseline; 
-  justify-content: flex-start;	
+  justify-content: flex-start;
 }
 .user-tweet-handle{
-  
   font-family: 'Dosis', sans-serif;
   font-size: 12px;
   justify-content: center;
@@ -173,6 +236,7 @@ button {
   background: #1DA1F2;
   color: #ffffff;
 }
+
 
 font-family: 'Anton', sans-serif;
 font-family: 'Dosis', sans-serif;
