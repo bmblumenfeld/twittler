@@ -11,7 +11,12 @@ streams.users.shawndrost = [];
 streams.users.sharksforcheap = [];
 streams.users.mracus = [];
 streams.users.douglascalhoun = [];
+streams.visitor = {};
+streams.visitor.benblumenfeld = [];
+streams.visitor.name = "benblumenfeld"
 window.users = Object.keys(streams.users);
+
+
 
 // utility function for adding tweets to our data structures
 var addTweet = function(newTweet){
@@ -19,6 +24,11 @@ var addTweet = function(newTweet){
   streams.users[username].push(newTweet);
   streams.home.push(newTweet);
 };
+
+function addWrittenTweet (newTweet){
+  streams.visitor.benblumenfeld.push(newTweet);
+  streams.home.push(newTweet);  
+}
 
 // utility function
 var randomElement = function(array){
@@ -59,11 +69,9 @@ scheduleNextTweet();
 // utility function for letting students add "write a tweet" functionality
 // (note: not used by the rest of this file.)
 var writeTweet = function(message){
-  if(!visitor){
-    throw new Error('set the global visitor property!');
-  }
   var tweet = {};
-  tweet.user = visitor;
+  tweet.user = streams.visitor.name;
   tweet.message = message;
-  addTweet(tweet);
+  tweet.created_at = getDate();
+  addWrittenTweet(tweet);
 };
